@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background: hsl(47, 88%, 63%);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-family: 'Figtree', sans-serif;
+
+	.card {
+		width: 90%;
+		height: 75vh;
+		background: hsl(0, 0%, 100%);
+		border-radius: 5%;
+		box-shadow: 10px 10px hsl(0, 0%, 7%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.card-inner {
+			width: 90%;
+			height: 90%;
+
+			.card-img {
+				border-radius: 5%;
+				margin-bottom: 1.5rem;
+			}
+
+			.btn-learn {
+				background: hsl(47, 88%, 63%);
+				padding: 0.5rem;
+				border-radius: 6%;
+				font-weight: bold;
+				font-size: small;
+				font-weight: bold;
+			}
+
+			h6 {
+				font-size: 0.8rem;
+				padding: 1.5rem 0;
+			}
+
+			h2 {
+				padding: 0 0 1rem 0;
+			}
+
+			p {
+				color: hsl(0, 0%, 50%);
+			}
+
+			.avatar {
+				display: flex;
+				justify-content: start;
+				margin-top: 2rem;
+
+				.greg {
+					width: 2.5rem;
+					height: 2.5rem;
+				}
+
+				h5 {
+					margin: 0.5rem;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 415px) {
+		.card {
+			width: 375px;
+			height: 62%;
+		}
+	}
+}
